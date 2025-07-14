@@ -1,35 +1,17 @@
-# vue-miniblog
+# Simple Blog App (Vue 3 + Pinia + Vue Router)
 
-This template should help get you started developing with Vue 3 in Vite.
+A lightweight blog application built with Vue 3. It uses **Pinia** for state management and **Vue Router** for navigation between pages.
 
-## Recommended IDE Setup
+## 🔧 Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Vue 3](https://vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
 
-## Customize configuration
+## ✨ Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- ✅ Create new blog posts
+- ✅ View a list of all blog posts
+- ✅ View individual blog post details
+- ❌ Edit blog posts (not implemented yet)
+- ❌ Delete blog posts (not implemented yet)

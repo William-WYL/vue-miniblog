@@ -1,11 +1,9 @@
 <script setup>
 import BlogItem from '@/components/BlogItem.vue'
 import { useBlogStore } from '@/stores/blogs'
-
 const blogStore = useBlogStore()
 const blogs = blogStore.sorted
 </script>
-
 <template>
   <div class="wrapper">
     <BlogList>
@@ -15,12 +13,12 @@ const blogs = blogStore.sorted
     </BlogList>
   </div>
 </template>
-
 <style scoped>
 .wrapper {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
