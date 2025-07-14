@@ -21,6 +21,11 @@ const router = createRouter({
       name: 'blog-detail',
       component: BlogDetailView,
     },
+    {
+      path: '/blogs/:id/edit',
+      name: 'blog-edit',
+      component: () => import('@/views/BlogEditView.vue'),
+    },
   ],
 })
 

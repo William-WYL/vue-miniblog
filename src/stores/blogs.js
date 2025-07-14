@@ -85,6 +85,18 @@ export const useBlogStore = defineStore('blogs', {
     getBlogById(id) {
       return this.blogs.find((blog) => blog.id === id)
     },
+    updateBlog(id, updatedBlog) {
+      const index = this.blogs.findIndex((b) => b.id === id)
+      if (index !== -1) {
+        this.blogs.splice(index, 1, { ...updatedBlog, id })
+      }
+    },
+    deleteBlog(id) {
+      const index = this.blogs.findIndex((b) => b.id === id)
+      if (index !== -1) {
+        this.blogs.splice(index, 1)
+      }
+    },
   },
   persist: true,
 })
