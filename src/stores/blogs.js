@@ -86,4 +86,5 @@ export const useBlogStore = defineStore('blogs', {
       return this.blogs.find((blog) => blog.id === id)
     },
   },
+  persist: true,
 })
